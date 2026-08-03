@@ -1,3 +1,4 @@
+
 # Book A Doctor
 
 Book A Doctor is a full-stack MERN application for booking medical appointments, managing doctor profiles, handling patient reports, and supporting role-based dashboards for patients, doctors, and admins.
@@ -30,3 +31,7 @@ Book A Doctor is a full-stack MERN application for booking medical appointments,
 
 ## Environment Variables
 See server/.env.example for the required keys.
+
+# Hospital-Management-System
+A full-stack Hospital Management System developed using Node.js, Express.js, MongoDB, and React. This application allows patients to book appointments, doctors to manage schedules, and administrators to monitor hospital operations efficiently.
+ 48e8259ce4f05d4cdb8f89b7f979c8e89b6e559f
