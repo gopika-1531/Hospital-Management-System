@@ -1,0 +1,42 @@
+:root {
+  color-scheme: light;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background: #f8fbff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6fbff 0%, #eef7ff 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.btn-primary { background-color: #0f4c81; border-color: #0f4c81; }
+.btn-primary:hover { background-color: #0b3a63; border-color: #0b3a63; }
+.btn-outline-primary { color: #0f4c81; border-color: #0f4c81; }
+.btn-outline-primary:hover { background-color: #0f4c81; color: white; }
+
+.card { border: 0; box-shadow: 0 10px 30px rgba(15, 76, 129, 0.08); border-radius: 16px; }
+.navbar { border-bottom: 1px solid rgba(15, 76, 129, 0.08); }
+.hero-section { background: linear-gradient(120deg, #0f4c81 0%, #3bafda 100%); color: white; }
+
+.loading-spinner {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 0.25rem solid rgba(15, 76, 129, 0.2);
+  border-top-color: #0f4c81;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
