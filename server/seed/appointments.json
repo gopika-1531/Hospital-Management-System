@@ -1,0 +1,22 @@
+[
+  {"patientEmail":"aarav.gupta@example.com","doctorEmail":"aditi.sharma@bookdoctor.com","appointmentDate":"2026-08-15","appointmentTime":"10:00 AM","symptoms":"Chest discomfort and shortness of breath","status":"Confirmed"},
+  {"patientEmail":"diya.sharma@example.com","doctorEmail":"rahul.verma@bookdoctor.com","appointmentDate":"2026-08-16","appointmentTime":"11:00 AM","symptoms":"Persistent skin rash and itching","status":"Pending"},
+  {"patientEmail":"rohan.mehta@example.com","doctorEmail":"meera.iyer@bookdoctor.com","appointmentDate":"2026-08-17","appointmentTime":"09:30 AM","symptoms":"Frequent migraine and dizziness","status":"Completed"},
+  {"patientEmail":"kavita.rao@example.com","doctorEmail":"arjun.rao@bookdoctor.com","appointmentDate":"2026-08-18","appointmentTime":"04:30 PM","symptoms":"Knee pain after exercise","status":"Confirmed"},
+  {"patientEmail":"siddharth.nair@example.com","doctorEmail":"nisha.patel@bookdoctor.com","appointmentDate":"2026-08-19","appointmentTime":"10:30 AM","symptoms":"Fever and cough in child","status":"Pending"},
+  {"patientEmail":"pallavi.joshi@example.com","doctorEmail":"karan.malhotra@bookdoctor.com","appointmentDate":"2026-08-20","appointmentTime":"01:30 PM","symptoms":"Irregular menstrual cycle","status":"Confirmed"},
+  {"patientEmail":"nikhil.banerjee@example.com","doctorEmail":"priya.nair@bookdoctor.com","appointmentDate":"2026-08-21","appointmentTime":"12:15 PM","symptoms":"Sinus congestion and ear pain","status":"Completed"},
+  {"patientEmail":"ishita.das@example.com","doctorEmail":"sandeep.kapoor@bookdoctor.com","appointmentDate":"2026-08-22","appointmentTime":"09:45 AM","symptoms":"Fatigue and high blood pressure","status":"Pending"},
+  {"patientEmail":"vivek.mishra@example.com","doctorEmail":"neha.joshi@bookdoctor.com","appointmentDate":"2026-08-23","appointmentTime":"02:30 PM","symptoms":"Anxiety and sleep disturbance","status":"Confirmed"},
+  {"patientEmail":"anjali.kapoor@example.com","doctorEmail":"vikram.singh@bookdoctor.com","appointmentDate":"2026-08-24","appointmentTime":"03:30 PM","symptoms":"Blurred vision and eye strain","status":"Completed"},
+  {"patientEmail":"harshad.menon@example.com","doctorEmail":"ananya.desai@bookdoctor.com","appointmentDate":"2026-08-25","appointmentTime":"11:45 AM","symptoms":"Palpitations and chest tightness","status":"Pending"},
+  {"patientEmail":"shreya.iyer@example.com","doctorEmail":"rohan.bhatia@bookdoctor.com","appointmentDate":"2026-08-26","appointmentTime":"10:15 AM","symptoms":"Hair fall and scalp irritation","status":"Confirmed"},
+  {"patientEmail":"aditya.sen@example.com","doctorEmail":"kavya.menon@bookdoctor.com","appointmentDate":"2026-08-27","appointmentTime":"04:15 PM","symptoms":"Numbness in hands and tingling","status":"Completed"},
+  {"patientEmail":"manya.bhatia@example.com","doctorEmail":"amit.khanna@bookdoctor.com","appointmentDate":"2026-08-28","appointmentTime":"01:45 PM","symptoms":"Lower back pain and stiffness","status":"Pending"},
+  {"patientEmail":"prateek.kulkarni@example.com","doctorEmail":"sneha.reddy@bookdoctor.com","appointmentDate":"2026-08-29","appointmentTime":"09:30 AM","symptoms":"Cold symptoms and poor appetite in child","status":"Confirmed"},
+  {"patientEmail":"ritika.thakur@example.com","doctorEmail":"dev.sharma@bookdoctor.com","appointmentDate":"2026-08-30","appointmentTime":"02:45 PM","symptoms":"Heavy periods and pelvic pain","status":"Completed"},
+  {"patientEmail":"kunal.chawla@example.com","doctorEmail":"pooja.agarwal@bookdoctor.com","appointmentDate":"2026-09-01","appointmentTime":"11:30 AM","symptoms":"Throat pain and voice hoarseness","status":"Pending"},
+  {"patientEmail":"neha.bansal@example.com","doctorEmail":"manoj.tiwari@bookdoctor.com","appointmentDate":"2026-09-02","appointmentTime":"08:45 AM","symptoms":"Recurrent fever and body ache","status":"Confirmed"},
+  {"patientEmail":"sourabh.jain@example.com","doctorEmail":"shruti.srinivasan@bookdoctor.com","appointmentDate":"2026-09-03","appointmentTime":"01:30 PM","symptoms":"Low mood and stress at work","status":"Cancelled"},
+  {"patientEmail":"tanya.sethi@example.com","doctorEmail":"abhishek.chandra@bookdoctor.com","appointmentDate":"2026-09-04","appointmentTime":"10:45 AM","symptoms":"Dry eyes and frequent headaches","status":"Confirmed"}
+]

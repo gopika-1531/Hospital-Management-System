@@ -12,6 +12,8 @@ const doctorSchema = new mongoose.Schema(
     availableTime: { type: String, default: '' },
     profileImage: { type: String, default: '' },
     approved: { type: Boolean, default: false },
+    rating: { type: Number, min: 3.5, max: 5, default: 4.5 },
+    about: { type: String, default: '' },
   },
   { timestamps: true }
 );

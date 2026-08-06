@@ -8,6 +8,9 @@ const userSchema = new mongoose.Schema(
     phone: { type: String, default: '' },
     gender: { type: String, default: '' },
     dob: { type: Date, default: null },
+    age: { type: Number, min: 0, default: null },
+    bloodGroup: { type: String, default: '' },
+    address: { type: String, default: '' },
     role: { type: String, enum: ['patient', 'doctor', 'admin'], default: 'patient' },
   },
   { timestamps: true }

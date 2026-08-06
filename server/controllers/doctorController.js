@@ -31,7 +31,7 @@ export const getDoctorById = async (req, res, next) => {
 
 export const createDoctor = async (req, res, next) => {
   try {
-    const doctor = await Doctor.create({ ...req.body, user: req.user._id });
+    const doctor = await Doctor.create({ ...req.body, user: req.user._id, approved: false });
     res.status(201).json({ success: true, doctor });
   } catch (error) {
     next(error);
@@ -44,7 +44,7 @@ export const updateDoctor = async (req, res, next) => {
     if (!doctor) return res.status(404).json({ message: 'Doctor not found' });
     if (req.user.role !== 'admin' && String(doctor.user) !== String(req.user._id)) return res.status(403).json({ message: 'Not authorized' });
 
-    const updated = await Doctor.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    const updated = await Doctor.findByIdAndUpdate(req.params.id, req.body, { new: true }).populate('user', 'name email phone');
     res.json({ success: true, doctor: updated });
   } catch (error) {
     next(error);
@@ -76,10 +76,33 @@ export const approveDoctor = async (req, res, next) => {
   }
 };
 
+export const rejectDoctor = async (req, res, next) => {
+  try {
+    const doctor = await Doctor.findById(req.params.id);
+    if (!doctor) return res.status(404).json({ message: 'Doctor not found' });
+    doctor.approved = false;
+    await doctor.save();
+    res.json({ success: true, doctor });
+  } catch (error) {
+    next(error);
+  }
+};
+
 export const listPendingDoctors = async (_req, res, next) => {
   try {
     const doctors = await Doctor.find({ approved: false }).populate('user', 'name email');
     res.json({ success: true, doctors });
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const getDoctorDashboard = async (req, res, next) => {
+  try {
+    const doctorProfile = await Doctor.findOne({ user: req.user._id });
+    if (!doctorProfile) return res.status(404).json({ message: 'Doctor profile not found' });
+    const doctorUsers = await User.find({ role: 'patient' }).select('-password');
+    res.json({ success: true, doctor: doctorProfile, patients: doctorUsers });
   } catch (error) {
     next(error);
   }
